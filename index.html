@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests"/>
+  <meta name="referrer" content="strict-origin-when-cross-origin"/>
+  <title>Sai Krishna | AI Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="particles" id="particles"></div>
+    <div class="gradient-orb orb1"></div>
+    <div class="gradient-orb orb2"></div>
+    <div class="gradient-orb orb3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>SAI KRISHNA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="SaiKrishna_Resume.pdf" download class="nav-resume"><i class="fas fa-download"></i> Resume</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#home" class="m-link">Home</a></li>
+      <li><a href="#about" class="m-link">About</a></li>
+      <li><a href="#skills" class="m-link">Skills</a></li>
+      <li><a href="#experience" class="m-link">Experience</a></li>
+      <li><a href="#projects" class="m-link">Projects</a></li>
+      <li><a href="#certifications" class="m-link">Certifications</a></li>
+      <li><a href="#contact" class="m-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="pulse-dot"></span>
+        Available for Opportunities
+      </div>
+      <!-- Resume floating banner -->
+      <div class="resume-banner reveal-up">
+        <a href="SaiKrishna_Resume.pdf" download class="resume-banner-link">
+          <i class="fas fa-file-pdf"></i>
+          <span>View Full Resume</span>
+          <i class="fas fa-arrow-down resume-bounce"></i>
+        </a>
+      </div>
+      <h1 class="hero-title reveal-up">
+        <span class="line">Akkala Venkata</span>
+        <span class="line gradient-text">Sai Krishna</span>
+      </h1>
+      <div class="hero-roles reveal-up">
+        <span class="role-static">I build</span>
+        <span class="role-dynamic" id="roleDynamic"></span>
+      </div>
+      <p class="hero-desc reveal-up">
+        AI Engineer crafting intelligent systems that drive real business impact.
+        Transforming complex data into scalable, production-grade AI solutions.
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="#projects" class="btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="SaiKrishna_Resume.pdf" download class="btn-resume">
+          <i class="fas fa-file-arrow-down"></i>
+          <span>Download Resume</span>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <span>Let's Talk</span>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat">
+          <span class="stat-num" data-target="10000">0</span><span>+</span>
+          <span class="stat-label">Doc Chunks Processed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="60">0</span><span>%</span>
+          <span class="stat-label">Search Time Reduced</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="35">0</span><span>%</span>
+          <span class="stat-label">Retrieval Precision Boost</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <div class="avatar-initials">SK</div>
+        </div>
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+      </div>
+      <div class="floating-card card1">
+        <i class="fas fa-brain"></i>
+        <span>Gen AI</span>
+      </div>
+      <div class="floating-card card2">
+        <i class="fas fa-cloud"></i>
+        <span>AWS</span>
+      </div>
+      <div class="floating-card card3">
+        <i class="fas fa-chart-line"></i>
+        <span>ML</span>
+      </div>
+      <div class="floating-card card4">
+        <i class="fas fa-database"></i>
+        <span>RAG</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Turning <span class="gradient-text">Data</span> into Intelligence</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm an <strong>AI Engineer</strong> with hands-on experience building production-grade AI solutions
+            at <strong>Hitachi Digital Services</strong>. I specialize in Generative AI, RAG pipelines, and
+            cloud-based ML systems that solve real enterprise challenges.
+          </p>
+          <p>
+            Currently pursuing my <strong>B.Tech in Data Science</strong> from Santhiram Engineering College
+            (CGPA: 8.49/10), I combine academic rigor with practical engineering to deliver scalable,
+            intelligent systems end-to-end — from data ingestion to cloud deployment.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bangalore, India</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Intern @ Hitachi Digital Services</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>B.Tech Data Science — CGPA 8.49</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-envelope"></i>
+              <span>saikrishnaakkala9@gmail.com</span>
+            </div>
+          </div>
+          <div class="about-btns" style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="mailto:saikrishnaakkala9@gmail.com" class="btn-primary">
+              <span>Hire Me</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+            <a href="SaiKrishna_Resume.pdf" download class="btn-resume">
+              <i class="fas fa-download"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-robot"></i></div>
+            <h3>Generative AI</h3>
+            <p>Building production RAG pipelines with LangChain, Amazon Bedrock, and LLMs like Claude & Titan.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <h3>Cloud & MLOps</h3>
+            <p>Deploying scalable AI backends on AWS EC2 with REST APIs, OpenSearch vector DBs, and S3.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3>Data Science</h3>
+            <p>End-to-end EDA, feature engineering, statistical modelling, and BI dashboards in Power BI & Tableau.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-code"></i></div>
+            <h3>Agentic AI</h3>
+            <p>Designing multi-agent systems with CrewAI and Ollama for autonomous code analysis and generation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+      </div>
+      <div class="skills-grid reveal-up">
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <span>Languages</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Advanced Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-brain"></i>
+            <span>ML / AI</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Predictive Modelling</span>
+            <span class="skill-tag">Statistical Modelling</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-magic"></i>
+            <span>Generative AI</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">RAG Pipelines</span>
+            <span class="skill-tag highlight">LangChain</span>
+            <span class="skill-tag highlight">Prompt Engineering</span>
+            <span class="skill-tag highlight">LLMs</span>
+            <span class="skill-tag highlight">Vector Databases</span>
+            <span class="skill-tag highlight">Embedding Generation</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fab fa-aws"></i>
+            <span>Cloud &amp; AWS</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Amazon Bedrock</span>
+            <span class="skill-tag">AWS OpenSearch</span>
+            <span class="skill-tag">Amazon EC2</span>
+            <span class="skill-tag">AWS S3</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-chart-pie"></i>
+            <span>Visualization</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-database"></i>
+            <span>Data &amp; Databases</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">ETL Pipelines</span>
+            <span class="skill-tag">Star Schema</span>
+            <span class="skill-tag">EDA</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <span>Tools &amp; Frameworks</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Claude</span>
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">CrewAI</span>
+            <span class="skill-tag">Ollama</span>
+            <span class="skill-tag">GitHub</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Proficiency Bars -->
+      <div class="proficiency reveal-up">
+        <h3 class="prof-title">Core Proficiencies</h3>
+        <div class="prof-bars">
+          <div class="prof-item">
+            <div class="prof-info"><span>Generative AI &amp; RAG</span><span>92%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="92"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>Python &amp; ML</span><span>88%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="88"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>AWS Cloud</span><span>80%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="80"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>Data Science &amp; EDA</span><span>85%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="85"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>SQL &amp; Data Engineering</span><span>82%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="82"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>AI Intern</h3>
+                <span class="company">Hitachi Digital Services</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jan 2025 – Present</span>
+                <span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Bangalore</span>
+              </div>
+            </div>
+            <div class="timeline-project">
+              <i class="fas fa-project-diagram"></i>
+              <strong>Project:</strong> Multimodal RAG-Based Conversational AI Chatbot
+              <span class="client-tag">Client: Japan Automotive Company</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Architected production-grade <strong>Multimodal RAG pipeline</strong> using LangChain &amp; Amazon Bedrock, cutting documentation search time by ~60%</li>
+              <li>Mined 10,000+ document chunks; built semantic vector search on Amazon OpenSearch with <strong>sub-second similarity retrieval</strong></li>
+              <li>Integrated <strong>Claude and Titan LLMs</strong> for context-aware, self-learning response generation</li>
+              <li>Engineered prompt templates and embedding tuning, boosting retrieval precision by <strong>~35%</strong> via A/B evaluation</li>
+              <li>Deployed full-stack AI backend on <strong>Amazon EC2</strong> with REST API endpoints for scalable enterprise query handling</li>
+              <li>Implemented automated model quality checks and data quality feedback loops</li>
+            </ul>
+            <div class="tech-used">
+              <span>LangChain</span><span>Amazon Bedrock</span><span>AWS OpenSearch</span><span>Claude LLM</span><span>Amazon EC2</span><span>NLP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-sub">6 live projects</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" data-delay="0">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-num">01</div>
+          <h3 class="project-title">AI-Powered Jira Resolution Agent</h3>
+          <p class="project-desc">
+            End-to-end agentic AI system that autonomously reads Jira tickets, identifies root causes of
+            code-level bugs, generates targeted fixes, and commits changes to Git branches.
+          </p>
+          <ul class="project-highlights">
+            <li>Multi-step LLM reasoning pipeline for root cause analysis</li>
+            <li>Orchestrated AI agents using CrewAI with automated Git workflows</li>
+            <li>Integrated Jira, codebase analysis, and version control into one workflow</li>
+          </ul>
+          <div class="project-tech">
+            <span>CrewAI</span><span>Ollama</span><span>Python</span><span>Git</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up" data-delay="100">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sai-krishna-akkala/PR-Review-Autopilot" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/sai-krishna-akkala/PR-Review-Autopilot" class="proj-link" title="Repository"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-num">02</div>
+          <h3 class="project-title">PR Review Autopilot</h3>
+          <p class="project-desc">
+            Multi-agent pull request review system that triggers when a PR is raised, runs specialized
+            security, performance, and code quality agents, and posts the review feedback directly on GitHub.
+          </p>
+          <ul class="project-highlights">
+            <li>Automated PR event handling for instant AI-assisted review workflows</li>
+            <li>Dedicated agents for security checks, performance risks, and code quality analysis</li>
+            <li>Posts structured review comments directly into GitHub for developer action</li>
+          </ul>
+          <div class="project-tech">
+            <span>GitHub</span><span>Agents</span><span>Python</span><span>Code Review</span><span>Automation</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-up" data-delay="200">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-num">03</div>
+          <h3 class="project-title">AI Alert System</h3>
+          <p class="project-desc">
+            Real-time intelligent monitoring application that detects abnormal or critical conditions
+            from live inputs and triggers immediate Gmail and Telegram alerts with minimal manual supervision.
+          </p>
+          <ul class="project-highlights">
+            <li>Real-time monitoring pipeline for continuous video and input stream analysis</li>
+            <li>AI-based anomaly detection using OpenCV, NumPy, scikit-learn, and custom decision logic</li>
+            <li>Instant alert delivery through Gmail and Telegram with a modular, scalable Streamlit deployment</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>OpenCV</span><span>NumPy</span><span>scikit-learn</span><span>Streamlit</span><span>Telegram API</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal-up" data-delay="300">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-warehouse"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-num">04</div>
+          <h3 class="project-title">Enterprise Data Warehouse &amp; Analytics Platform</h3>
+          <p class="project-desc">
+            End-to-end ETL pipeline ingesting CRM and ERP datasets with Star Schema modeling,
+            statistical analysis, and self-service BI dashboards — delivering 3× faster reporting.
+          </p>
+          <ul class="project-highlights">
+            <li>ETL pipeline with transformation logic and data quality checks</li>
+            <li>Star Schema with optimized fact and dimension tables</li>
+            <li>Integrated with Power BI and Tableau for self-service analytics</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>SQL</span><span>ETL</span><span>Star Schema</span><span>Power BI</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal-up" data-delay="400">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-num">05</div>
+          <h3 class="project-title">Automated EDA &amp; Intelligent Data Analysis Platform</h3>
+          <p class="project-desc">
+            Streamlit web application for CSV and SQL Server data ingestion with automated EDA,
+            statistical profiling, and ML-based outlier detection — reducing analyst prep time by ~50%.
+          </p>
+          <ul class="project-highlights">
+            <li>Supports datasets up to 500K rows with interactive filtering</li>
+            <li>Automated data cleaning and dynamic Matplotlib/Seaborn visualizations</li>
+            <li>Enabled non-technical users to perform EDA independently</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>Streamlit</span><span>Pandas</span><span>SQL Server</span><span>ML</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal-up" data-delay="500">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sai-krishna-akkala/Ecommerce-data-analysis" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/sai-krishna-akkala/Ecommerce-data-analysis" class="proj-link" title="Repository"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-num">06</div>
+          <h3 class="project-title">E-Commerce Analytics</h3>
+          <p class="project-desc">
+            End-to-end analytics solution built on the Olist e-commerce dataset using Python, MySQL, and Power BI,
+            with ETL pipelines, KPI dashboards, delivery insights, and city-based row level security.
+          </p>
+          <ul class="project-highlights">
+            <li>Built a complete ETL workflow in Python to clean, load, and prepare e-commerce data in MySQL</li>
+            <li>Created analytical SQL views and interactive Power BI dashboards for sales, revenue, and delivery insights</li>
+            <li>Implemented city-based RLS so users can securely access dashboards limited to their own location</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>MySQL</span><span>Power BI</span><span>SQL</span><span>ETL</span><span>RLS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="certs-edu-grid">
+        <div class="edu-block reveal-left">
+          <h3 class="block-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="edu-card">
+            <div class="edu-logo">SE</div>
+            <div class="edu-info">
+              <h4>B.Tech — Data Science</h4>
+              <span class="edu-school">Santhiram Engineering College (JNTUA)</span>
+              <span class="edu-year">Aug 2021 – Apr 2025</span>
+              <div class="cgpa-bar-wrap">
+                <span>CGPA:</span>
+                <div class="cgpa-bar">
+                  <div class="cgpa-fill" data-width="84.9"></div>
+                </div>
+                <span class="cgpa-val">8.49 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="certs-block reveal-right">
+          <h3 class="block-title"><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-card">
+              <div class="cert-badge"><i class="fas fa-chart-bar"></i></div>
+              <div>
+                <h4>Data Analyst Certification</h4>
+                <span>ExcelR, Bangalore</span>
+              </div>
+              <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-badge"><i class="fas fa-users-cog"></i></div>
+              <div>
+                <h4>Creating Agents with CrewAI</h4>
+                <span>LinkedIn Learning</span>
+              </div>
+              <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-badge"><i class="fas fa-language"></i></div>
+              <div>
+                <h4>Natural Language Processing (NLP)</h4>
+                <span>LinkedIn Learning</span>
+              </div>
+              <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-badge"><i class="fas fa-magic"></i></div>
+              <div>
+                <h4>Advanced Prompt Engineering Techniques</h4>
+                <span>LinkedIn Learning</span>
+              </div>
+              <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-sub">Open to full-time roles, freelance projects, and collaborations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:saikrishnaakkala9@gmail.com" class="contact-val">saikrishnaakkala9@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919676295867" class="contact-val">+91 9676295867</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">Bangalore, India</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="mailto:saikrishnaakkala9@gmail.com" class="social-btn" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" action="https://formsubmit.co/saikrishnaakkala9@gmail.com" method="POST">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_template" value="table" />
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Job Opportunity / Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-dot"></span>
+        <span>Akkala Venkata Sai Krishna</span>
+      </div>
+      <p class="footer-copy">© 2025 · Built with passion for AI &amp; Data Science</p>
+      <div class="footer-socials">
+        <a href="mailto:saikrishnaakkala9@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Resume Download Button -->
+  <a href="SaiKrishna_Resume.pdf" download class="fab-resume">
+    <i class="fas fa-file-arrow-down"></i>
+    <span>Download CV</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
