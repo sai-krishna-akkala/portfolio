@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests"/>
   <meta name="referrer" content="strict-origin-when-cross-origin"/>
-  <title>Sai Krishna | AI Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Akkala Venkata Sai Krishna - Data Analyst & Business Intelligence Specialist. Core skills: Power BI, Tableau, SQL, Python, Advanced Excel, Stakeholder Management, and ETL Pipelines."/>
+  <title>Akkala Venkata Sai Krishna | Data Analyst &amp; BI Specialist</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
-  <!-- Animated Background -->
+  <!-- Background Data Grid & Ambient Glow -->
   <div class="bg-animation">
+    <div class="data-grid-overlay"></div>
     <div class="particles" id="particles"></div>
     <div class="gradient-orb orb1"></div>
     <div class="gradient-orb orb2"></div>
@@ -27,6 +29,7 @@
     <div class="nav-brand">
       <span class="brand-dot"></span>
       <span>SAI KRISHNA</span>
+      <span class="brand-role">Data Analyst</span>
     </div>
     <ul class="nav-links">
       <li><a href="#home" class="nav-link active">Home</a></li>
@@ -34,24 +37,25 @@
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#experience" class="nav-link">Experience</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#certifications" class="nav-link">Credentials</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
-      <li><a href="SaiKrishna_Resume.pdf" download class="nav-resume"><i class="fas fa-download"></i> Resume</a></li>
+      <li><a href="SaiKrishna_Resume.pdf" download class="nav-resume"><i class="fas fa-file-arrow-down"></i> Resume</a></li>
     </ul>
-    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
   </nav>
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+    <button class="close-btn" id="closeBtn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
     <ul>
       <li><a href="#home" class="m-link">Home</a></li>
       <li><a href="#about" class="m-link">About</a></li>
       <li><a href="#skills" class="m-link">Skills</a></li>
       <li><a href="#experience" class="m-link">Experience</a></li>
       <li><a href="#projects" class="m-link">Projects</a></li>
-      <li><a href="#certifications" class="m-link">Certifications</a></li>
+      <li><a href="#certifications" class="m-link">Credentials</a></li>
       <li><a href="#contact" class="m-link">Contact</a></li>
+      <li><a href="SaiKrishna_Resume.pdf" download class="m-link" style="color:var(--accent);"><i class="fas fa-download"></i> Download Resume</a></li>
     </ul>
   </div>
 
@@ -60,31 +64,37 @@
     <div class="hero-content">
       <div class="hero-badge reveal-up">
         <span class="pulse-dot"></span>
-        Available for Opportunities
+        Available for Data Analyst Roles
       </div>
-      <!-- Resume floating banner -->
+      
+      <!-- Resume Banner Link -->
       <div class="resume-banner reveal-up">
         <a href="SaiKrishna_Resume.pdf" download class="resume-banner-link">
           <i class="fas fa-file-pdf"></i>
-          <span>View Full Resume</span>
+          <span>Download Latest Resume (PDF)</span>
           <i class="fas fa-arrow-down resume-bounce"></i>
         </a>
       </div>
+
       <h1 class="hero-title reveal-up">
         <span class="line">Akkala Venkata</span>
         <span class="line gradient-text">Sai Krishna</span>
       </h1>
+
       <div class="hero-roles reveal-up">
-        <span class="role-static">I build</span>
+        <span class="role-static">I deliver</span>
         <span class="role-dynamic" id="roleDynamic"></span>
       </div>
+
       <p class="hero-desc reveal-up">
-        AI Engineer crafting intelligent systems that drive real business impact.
-        Transforming complex data into scalable, production-grade AI solutions.
+        Results-oriented Data Analyst specializing in transforming complex datasets into actionable business intelligence.
+        Experienced in building executive Power BI &amp; Tableau dashboards, architecting optimized SQL &amp; Snowflake data pipelines,
+        and driving stakeholder decisions across high-impact enterprise environments.
       </p>
+
       <div class="hero-btns reveal-up">
         <a href="#projects" class="btn-primary">
-          <span>View My Work</span>
+          <span>Explore Projects</span>
           <i class="fas fa-arrow-right"></i>
         </a>
         <a href="SaiKrishna_Resume.pdf" download class="btn-resume">
@@ -92,13 +102,19 @@
           <span>Download Resume</span>
         </a>
         <a href="#contact" class="btn-secondary">
-          <span>Let's Talk</span>
+          <span>Get In Touch</span>
         </a>
       </div>
+
       <div class="hero-stats reveal-up">
         <div class="stat">
-          <span class="stat-num" data-target="10000">0</span><span>+</span>
-          <span class="stat-label">Doc Chunks Processed</span>
+          <span class="stat-num" data-target="500000">0</span><span>+</span>
+          <span class="stat-label">Rows Analyzed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span>x</span>
+          <span class="stat-label">Query Speedup via ETL</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
@@ -107,37 +123,39 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-num" data-target="35">0</span><span>%</span>
-          <span class="stat-label">Retrieval Precision Boost</span>
+          <span class="stat-num" data-target="10">0</span><span>+</span>
+          <span class="stat-label">BI Dashboards Delivered</span>
         </div>
       </div>
     </div>
+
     <div class="hero-visual reveal-right">
       <div class="avatar-ring">
         <div class="avatar-inner">
-          <div class="avatar-initials">SK</div>
+          <span class="avatar-initials">SK</span>
         </div>
         <div class="ring ring1"></div>
         <div class="ring ring2"></div>
         <div class="ring ring3"></div>
       </div>
       <div class="floating-card card1">
-        <i class="fas fa-brain"></i>
-        <span>Gen AI</span>
+        <i class="fas fa-chart-column"></i>
+        <span>Power BI</span>
       </div>
       <div class="floating-card card2">
-        <i class="fas fa-cloud"></i>
-        <span>AWS</span>
+        <i class="fas fa-database"></i>
+        <span>SQL / DB</span>
       </div>
       <div class="floating-card card3">
-        <i class="fas fa-chart-line"></i>
-        <span>ML</span>
+        <i class="fas fa-chart-pie"></i>
+        <span>Tableau</span>
       </div>
       <div class="floating-card card4">
-        <i class="fas fa-database"></i>
-        <span>RAG</span>
+        <i class="fas fa-diagram-project"></i>
+        <span>Python &amp; ETL</span>
       </div>
     </div>
+
     <div class="scroll-indicator">
       <div class="scroll-mouse">
         <div class="scroll-wheel"></div>
@@ -151,69 +169,70 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">About Me</span>
-        <h2 class="section-title">Turning <span class="gradient-text">Data</span> into Intelligence</h2>
+        <h2 class="section-title">Transforming Data into <span class="gradient-text">Actionable Decisions</span></h2>
       </div>
       <div class="about-grid">
         <div class="about-text reveal-left">
           <p>
-            I'm an <strong>AI Engineer</strong> with hands-on experience building production-grade AI solutions
-            at <strong>Hitachi Digital Services</strong>. I specialize in Generative AI, RAG pipelines, and
-            cloud-based ML systems that solve real enterprise challenges.
+            I am a <strong>Data Analyst</strong> with a proven track record in data integrity, statistical rigor, dashboard engineering,
+            and business intelligence. I specialize in bridging the gap between raw data architectures and executive decision-making.
           </p>
           <p>
-            Currently pursuing my <strong>B.Tech in Data Science</strong> from Santhiram Engineering College
-            (CGPA: 8.49/10), I combine academic rigor with practical engineering to deliver scalable,
-            intelligent systems end-to-end — from data ingestion to cloud deployment.
+            Currently pursuing my <strong>B.Tech in Data Science</strong> from Santhiram Engineering College (CGPA: 8.49/10, Silver Medalist),
+            I combine analytical depth with hands-on corporate experience at <strong>Adecco (on-site Apple)</strong> and 
+            <strong>Hitachi Digital Services</strong>. I architect reliable ETL workflows, structured Star Schema models, and intuitive 
+            KPI dashboards that give stakeholders full visibility into their operations.
           </p>
           <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Data Analyst @ Adecco (On-site Apple)</span>
+            </div>
             <div class="highlight-item">
               <i class="fas fa-map-marker-alt"></i>
               <span>Bangalore, India</span>
             </div>
             <div class="highlight-item">
-              <i class="fas fa-briefcase"></i>
-              <span>AI Intern @ Hitachi Digital Services</span>
-            </div>
-            <div class="highlight-item">
-              <i class="fas fa-graduation-cap"></i>
-              <span>B.Tech Data Science — CGPA 8.49</span>
+              <i class="fas fa-award"></i>
+              <span>B.Tech Data Science — CGPA 8.49 (Silver Medalist)</span>
             </div>
             <div class="highlight-item">
               <i class="fas fa-envelope"></i>
               <span>saikrishnaakkala9@gmail.com</span>
             </div>
           </div>
-          <div class="about-btns" style="display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="mailto:saikrishnaakkala9@gmail.com" class="btn-primary">
+          <div class="about-btns">
+            <a href="#contact" class="btn-primary">
               <span>Hire Me</span>
               <i class="fas fa-paper-plane"></i>
             </a>
             <a href="SaiKrishna_Resume.pdf" download class="btn-resume">
               <i class="fas fa-download"></i>
-              <span>Resume</span>
+              <span>Download CV</span>
             </a>
           </div>
         </div>
+
         <div class="about-cards reveal-right">
           <div class="info-card">
-            <div class="info-icon"><i class="fas fa-robot"></i></div>
-            <h3>Generative AI</h3>
-            <p>Building production RAG pipelines with LangChain, Amazon Bedrock, and LLMs like Claude & Titan.</p>
+            <div class="info-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>BI &amp; Dashboards</h3>
+            <p>Building interactive Power BI &amp; Tableau dashboards with dynamic DAX calculations, LOD expressions, and executive KPI cards.</p>
           </div>
           <div class="info-card">
-            <div class="info-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-            <h3>Cloud & MLOps</h3>
-            <p>Deploying scalable AI backends on AWS EC2 with REST APIs, OpenSearch vector DBs, and S3.</p>
+            <div class="info-icon"><i class="fas fa-database"></i></div>
+            <h3>Data Analysis &amp; SQL</h3>
+            <p>Writing optimized SQL queries, analytical views, and Python scripts for trend identification, anomaly detection, and decision support.</p>
           </div>
           <div class="info-card">
-            <div class="info-icon"><i class="fas fa-chart-bar"></i></div>
-            <h3>Data Science</h3>
-            <p>End-to-end EDA, feature engineering, statistical modelling, and BI dashboards in Power BI & Tableau.</p>
+            <div class="info-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>ETL &amp; Data Modeling</h3>
+            <p>Designing dimensional Star Schema models, automated data transformations, rigorous validation checks, and Row-Level Security (RLS).</p>
           </div>
           <div class="info-card">
-            <div class="info-icon"><i class="fas fa-code"></i></div>
-            <h3>Agentic AI</h3>
-            <p>Designing multi-agent systems with CrewAI and Ollama for autonomous code analysis and generation.</p>
+            <div class="info-icon"><i class="fas fa-users"></i></div>
+            <h3>Stakeholder Collaboration</h3>
+            <p>Gathering business requirements, translating complex data into clear narratives, and presenting executive findings to leadership.</p>
           </div>
         </div>
       </div>
@@ -224,135 +243,264 @@
   <section class="section section-dark" id="skills">
     <div class="container">
       <div class="section-header reveal-up">
-        <span class="section-tag">Technical Arsenal</span>
-        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <span class="section-tag">Core Stack &amp; Competencies</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Analytical Toolkit</span></h2>
+        <p class="section-sub">A focused, industry-standard data analyst stack featuring Power BI, Tableau, SQL, Python, Excel, and Stakeholder Management</p>
       </div>
-      <div class="skills-grid reveal-up">
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-code"></i>
-            <span>Languages</span>
+      <!-- FEATURED CORE TOOLS GRID (PROMINENT POWER BI, TABLEAU, SQL, PYTHON, EXCEL, STAKEHOLDER MANAGEMENT) -->
+      <div class="featured-skills-grid reveal-up">
+
+        <!-- 1. Power BI -->
+        <div class="feat-skill-card" style="--card-accent: #f59e0b;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(245, 158, 11, 0.15); --icon-color: #f59e0b;">
+              <i class="fas fa-chart-column"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>Microsoft Power BI</h3>
+              <span>Business Intelligence &amp; Dashboards</span>
+            </div>
           </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Advanced Excel</span>
+          <p class="feat-skill-desc">
+            End-to-end dashboard development, advanced DAX measures, Power Query data transformation, dimensional data modeling (Star Schema), interactive drill-throughs, and role-based Row-Level Security (RLS).
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag">DAX Calculations</span>
+            <span class="feat-skill-tag">Power Query</span>
+            <span class="feat-skill-tag">Data Modeling</span>
+            <span class="feat-skill-tag">Row-Level Security (RLS)</span>
+            <span class="feat-skill-tag">KPI Scorecards</span>
           </div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-brain"></i>
-            <span>ML / AI</span>
+        <!-- 2. Tableau -->
+        <div class="feat-skill-card" style="--card-accent: #38bdf8;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(56, 189, 248, 0.15); --icon-color: #38bdf8;">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>Tableau Desktop &amp; Server</h3>
+              <span>Visual Analytics &amp; Storytelling</span>
+            </div>
           </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Scikit-learn</span>
-            <span class="skill-tag">NLP</span>
-            <span class="skill-tag">Deep Learning</span>
-            <span class="skill-tag">Predictive Modelling</span>
-            <span class="skill-tag">Statistical Modelling</span>
+          <p class="feat-skill-desc">
+            Crafting executive KPI dashboards, Level of Detail (LOD) expressions, parameters, calculated fields, dashboard actions, trend forecasting, and interactive data storytelling for business leaders.
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag">LOD Expressions</span>
+            <span class="feat-skill-tag">Calculated Fields</span>
+            <span class="feat-skill-tag">Parameters</span>
+            <span class="feat-skill-tag">Dashboard Actions</span>
+            <span class="feat-skill-tag">Data Storytelling</span>
           </div>
         </div>
 
+        <!-- 3. SQL & Snowflake -->
+        <div class="feat-skill-card" style="--card-accent: #3b82f6;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(59, 130, 246, 0.15); --icon-color: #3b82f6;">
+              <i class="fas fa-snowflake"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>SQL &amp; Snowflake</h3>
+              <span>Cloud Warehousing · MySQL · PostgreSQL · SQL Server</span>
+            </div>
+          </div>
+          <p class="feat-skill-desc">
+            Writing high-performance relational queries across <strong>Snowflake Cloud Data Warehouse</strong>, MySQL, PostgreSQL, and SQL Server. Designing analytical data marts, multi-table joins, subqueries, CTEs, and window functions for downstream BI consumption.
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag highlight">Snowflake</span>
+            <span class="feat-skill-tag">Complex Joins &amp; CTEs</span>
+            <span class="feat-skill-tag">Window Functions</span>
+            <span class="feat-skill-tag">Query Optimization</span>
+            <span class="feat-skill-tag">Data Marts</span>
+            <span class="feat-skill-tag">Cloud Warehousing</span>
+          </div>
+        </div>
+
+        <!-- 4. Python for Analytics -->
+        <div class="feat-skill-card" style="--card-accent: #0ea5e9;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(14, 165, 233, 0.15); --icon-color: #0ea5e9;">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>Python for Data Analysis</h3>
+              <span>Pandas · NumPy · Seaborn</span>
+            </div>
+          </div>
+          <p class="feat-skill-desc">
+            Automating exploratory data analysis (EDA), data wrangling, missing-value imputation, outlier detection, statistical profiling, and custom chart generation with Matplotlib and Seaborn.
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag">Pandas</span>
+            <span class="feat-skill-tag">NumPy</span>
+            <span class="feat-skill-tag">Matplotlib &amp; Seaborn</span>
+            <span class="feat-skill-tag">Statistical Profiling</span>
+            <span class="feat-skill-tag">EDA</span>
+          </div>
+        </div>
+
+        <!-- 5. Advanced Excel -->
+        <div class="feat-skill-card" style="--card-accent: #10b981;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(16, 185, 129, 0.15); --icon-color: #10b981;">
+              <i class="fas fa-file-excel"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>Advanced Microsoft Excel</h3>
+              <span>Spreadsheets &amp; KPI Modeling</span>
+            </div>
+          </div>
+          <p class="feat-skill-desc">
+            Building complex spreadsheet models, Pivot Tables &amp; Pivot Charts, nested XLOOKUP / VLOOKUP formulas, Power Pivot data relationships, data cleaning, and rapid financial/KPI prototyping.
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag">Pivot Tables &amp; Charts</span>
+            <span class="feat-skill-tag">XLOOKUP / VLOOKUP</span>
+            <span class="feat-skill-tag">Power Pivot</span>
+            <span class="feat-skill-tag">Data Validation</span>
+            <span class="feat-skill-tag">Formula Automation</span>
+          </div>
+        </div>
+
+        <!-- 6. Stakeholder Management -->
+        <div class="feat-skill-card" style="--card-accent: #818cf8;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(129, 140, 248, 0.15); --icon-color: #818cf8;">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>Stakeholder Management</h3>
+              <span>Communication &amp; Strategy</span>
+            </div>
+          </div>
+          <p class="feat-skill-desc">
+            Bridging technical data pipelines and executive decision-makers. Gathering business requirements, defining clear KPI frameworks, presenting analytical reports, and aligning cross-functional teams.
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag">Requirements Gathering</span>
+            <span class="feat-skill-tag">Executive Reporting</span>
+            <span class="feat-skill-tag">KPI Definition</span>
+            <span class="feat-skill-tag">Cross-Functional Sync</span>
+            <span class="feat-skill-tag">Digital Strategy</span>
+          </div>
+        </div>
+
+        <!-- 7. Artificial Intelligence, LLMs & RAG -->
+        <div class="feat-skill-card" style="--card-accent: #a855f7;">
+          <div class="feat-skill-header">
+            <div class="feat-skill-icon" style="--icon-bg: rgba(168, 85, 247, 0.15); --icon-color: #a855f7;">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="feat-skill-info">
+              <h3>Artificial Intelligence &amp; LLMs</h3>
+              <span>RAG Pipelines · LangChain · Vector Search</span>
+            </div>
+          </div>
+          <p class="feat-skill-desc">
+            Architecting production Retrieval-Augmented Generation (RAG) pipelines, integrating foundational LLMs, optimizing prompt engineering, vector indexing with Amazon OpenSearch, and evaluating model response quality.
+          </p>
+          <div class="feat-skill-tags">
+            <span class="feat-skill-tag highlight">LLMs</span>
+            <span class="feat-skill-tag highlight">RAG Pipelines</span>
+            <span class="feat-skill-tag">Prompt Engineering</span>
+            <span class="feat-skill-tag">LangChain</span>
+            <span class="feat-skill-tag">Amazon Bedrock</span>
+            <span class="feat-skill-tag">Amazon OpenSearch</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECONDARY SKILLS CATEGORIES -->
+      <div class="skills-grid reveal-up" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <!-- Category: Data Engineering & Quality -->
         <div class="skill-category">
           <div class="skill-cat-header">
-            <i class="fas fa-magic"></i>
-            <span>Generative AI</span>
+            <i class="fas fa-sitemap"></i>
+            <span>Data Engineering &amp; Warehousing</span>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag highlight">RAG Pipelines</span>
-            <span class="skill-tag highlight">LangChain</span>
+            <span class="skill-tag highlight">Snowflake</span>
+            <span class="skill-tag highlight">ETL Pipelines</span>
+            <span class="skill-tag highlight">Star Schema Modeling</span>
+            <span class="skill-tag">Cloud Data Warehousing</span>
+            <span class="skill-tag">Row-Level Security (RLS)</span>
+            <span class="skill-tag">Data Cleaning &amp; Validation</span>
+            <span class="skill-tag">Git Version Control</span>
+          </div>
+        </div>
+
+        <!-- Category: Artificial Intelligence & LLMs -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-robot"></i>
+            <span>Artificial Intelligence &amp; Gen AI</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">LLMs (Claude / Titan)</span>
+            <span class="skill-tag highlight">RAG Architectures</span>
             <span class="skill-tag highlight">Prompt Engineering</span>
-            <span class="skill-tag highlight">LLMs</span>
-            <span class="skill-tag highlight">Vector Databases</span>
-            <span class="skill-tag highlight">Embedding Generation</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fab fa-aws"></i>
-            <span>Cloud &amp; AWS</span>
-          </div>
-          <div class="skill-tags">
+            <span class="skill-tag">Semantic Search</span>
+            <span class="skill-tag">Amazon OpenSearch</span>
             <span class="skill-tag">Amazon Bedrock</span>
-            <span class="skill-tag">AWS OpenSearch</span>
-            <span class="skill-tag">Amazon EC2</span>
-            <span class="skill-tag">AWS S3</span>
+            <span class="skill-tag">LangChain</span>
           </div>
         </div>
 
+        <!-- Category: Business Strategy & Communication -->
         <div class="skill-category">
           <div class="skill-cat-header">
-            <i class="fas fa-chart-pie"></i>
-            <span>Visualization</span>
+            <i class="fas fa-bullseye"></i>
+            <span>Business Strategy &amp; Communication</span>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag">Power BI</span>
-            <span class="skill-tag">Tableau</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">Seaborn</span>
-            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag highlight">Stakeholder Management</span>
+            <span class="skill-tag highlight">KPI &amp; Metric Definition</span>
+            <span class="skill-tag highlight">Requirements Gathering</span>
+            <span class="skill-tag">Executive Reporting</span>
+            <span class="skill-tag">Digital Strategy Support</span>
+            <span class="skill-tag">Process Improvement</span>
+            <span class="skill-tag">Cross-Functional Sync</span>
           </div>
         </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-database"></i>
-            <span>Data &amp; Databases</span>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">SQL Server</span>
-            <span class="skill-tag">ETL Pipelines</span>
-            <span class="skill-tag">Star Schema</span>
-            <span class="skill-tag">EDA</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <i class="fas fa-tools"></i>
-            <span>Tools &amp; Frameworks</span>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Claude</span>
-            <span class="skill-tag">Hugging Face</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">CrewAI</span>
-            <span class="skill-tag">Ollama</span>
-            <span class="skill-tag">GitHub</span>
-          </div>
-        </div>
-
       </div>
 
       <!-- Proficiency Bars -->
       <div class="proficiency reveal-up">
-        <h3 class="prof-title">Core Proficiencies</h3>
+        <h3 class="prof-title"><i class="fas fa-sliders" style="color:var(--accent);margin-right:8px;"></i> Core Proficiencies</h3>
         <div class="prof-bars">
           <div class="prof-item">
-            <div class="prof-info"><span>Generative AI &amp; RAG</span><span>92%</span></div>
-            <div class="prof-bar"><div class="prof-fill" data-width="92"></div></div>
+            <div class="prof-info"><span>Power BI Dashboard Development &amp; DAX</span><span>96%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="96"></div></div>
           </div>
           <div class="prof-item">
-            <div class="prof-info"><span>Python &amp; ML</span><span>88%</span></div>
+            <div class="prof-info"><span>Tableau Visual Analytics &amp; LOD Expressions</span><span>94%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="94"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>SQL &amp; Snowflake Data Warehousing</span><span>94%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="94"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>Stakeholder Management &amp; Reporting</span><span>90%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="90"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-info"><span>Python for Analytics &amp; EDA</span><span>88%</span></div>
             <div class="prof-bar"><div class="prof-fill" data-width="88"></div></div>
           </div>
           <div class="prof-item">
-            <div class="prof-info"><span>AWS Cloud</span><span>80%</span></div>
-            <div class="prof-bar"><div class="prof-fill" data-width="80"></div></div>
+            <div class="prof-info"><span>AI, LLMs &amp; RAG Architectures</span><span>88%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="88"></div></div>
           </div>
           <div class="prof-item">
-            <div class="prof-info"><span>Data Science &amp; EDA</span><span>85%</span></div>
-            <div class="prof-bar"><div class="prof-fill" data-width="85"></div></div>
-          </div>
-          <div class="prof-item">
-            <div class="prof-info"><span>SQL &amp; Data Engineering</span><span>82%</span></div>
-            <div class="prof-bar"><div class="prof-fill" data-width="82"></div></div>
+            <div class="prof-info"><span>ETL Pipelines &amp; Data Validation</span><span>86%</span></div>
+            <div class="prof-bar"><div class="prof-fill" data-width="86"></div></div>
           </div>
         </div>
       </div>
@@ -365,219 +513,306 @@
       <div class="section-header reveal-up">
         <span class="section-tag">Work History</span>
         <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+        <p class="section-sub">Proven analytical track record across global corporate environments and enterprise clients</p>
       </div>
+
       <div class="timeline">
+
+        <!-- Role 1: Adecco (On-site Apple) -->
         <div class="timeline-item reveal-up">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3>AI Intern</h3>
-                <span class="company">Hitachi Digital Services</span>
+                <h3>Data Analyst</h3>
+                <span class="company">
+                  <i class="fas fa-building"></i> Adecco
+                  <span class="client-badge"><i class="fab fa-apple"></i> On-Site Apple</span>
+                </span>
               </div>
               <div class="timeline-meta">
-                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jan 2025 – Present</span>
-                <span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Bangalore</span>
+                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2026 – Present</span>
+                <span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
               </div>
             </div>
+            
             <div class="timeline-project">
-              <i class="fas fa-project-diagram"></i>
-              <strong>Project:</strong> Multimodal RAG-Based Conversational AI Chatbot
-              <span class="client-tag">Client: Japan Automotive Company</span>
+              <i class="fas fa-layer-group"></i>
+              <strong>Scope:</strong> Enterprise Data Warehousing (Snowflake), Data Integrity &amp; KPI Analytics
             </div>
+
             <ul class="timeline-list">
-              <li>Architected production-grade <strong>Multimodal RAG pipeline</strong> using LangChain &amp; Amazon Bedrock, cutting documentation search time by ~60%</li>
-              <li>Mined 10,000+ document chunks; built semantic vector search on Amazon OpenSearch with <strong>sub-second similarity retrieval</strong></li>
-              <li>Integrated <strong>Claude and Titan LLMs</strong> for context-aware, self-learning response generation</li>
-              <li>Engineered prompt templates and embedding tuning, boosting retrieval precision by <strong>~35%</strong> via A/B evaluation</li>
-              <li>Deployed full-stack AI backend on <strong>Amazon EC2</strong> with REST API endpoints for scalable enterprise query handling</li>
-              <li>Implemented automated model quality checks and data quality feedback loops</li>
+              <li>Built <strong>10+ Tableau dashboards</strong> tracking <strong>60+ metrics</strong>, used by 6+ cross-functional teams for faster, data-driven decisions.</li>
+              <li>Analysed contact rate metrics in Q4 using <strong>SQL and Python on Snowflake</strong>, uncovering actionable insights that reduced company costs and supported digital strategy.</li>
+              <li>Validated <strong>4+ dashboards</strong> and resolved <strong>3+ data discrepancies</strong> across Snowflake pipelines, ensuring 100% accurate and consistent reporting.</li>
+              <li>Gathered business requirements from <strong>6+ stakeholders</strong> and presented findings through clear, actionable executive reports.</li>
             </ul>
+
             <div class="tech-used">
-              <span>LangChain</span><span>Amazon Bedrock</span><span>AWS OpenSearch</span><span>Claude LLM</span><span>Amazon EC2</span><span>NLP</span>
+              <span>Snowflake</span>
+              <span>SQL</span>
+              <span>Python</span>
+              <span>Tableau</span>
+              <span>Cloud Warehousing</span>
+              <span>Stakeholder Management</span>
+              <span>Data Integrity</span>
+              <span>KPI Dashboards</span>
+              <span>Business Intelligence</span>
+              <span>Reporting</span>
             </div>
           </div>
         </div>
+
+        <!-- Role 2: Hitachi Digital Services -->
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analyst Intern</h3>
+                <span class="company">
+                  <i class="fas fa-building"></i> Hitachi Digital Services
+                  <span class="client-badge"><i class="fas fa-car"></i> Client: NISSAN</span>
+                </span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jan 2026 – Jun 2026</span>
+                <span class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+              </div>
+            </div>
+
+            <div class="timeline-project">
+              <i class="fas fa-chart-line"></i>
+              <strong>Project:</strong> Multimodal Knowledge &amp; Live Telemetry Analytics System (Client: NISSAN)
+            </div>
+
+            <ul class="timeline-list">
+              <li>Analysed <strong>live telemetry, query logs, and interaction datasets</strong> across 10,000+ indexed document chunks, evaluating retrieval accuracy, latency patterns, and user query behavior.</li>
+              <li>Built <strong>analytical performance dashboards and KPI trackers</strong> to monitor query throughput, error distributions, and response latencies, directly driving a <strong>~60% reduction</strong> in manual document search time for client Nissan.</li>
+              <li>Performed exploratory data analysis and embedding parameter tuning (chunk sizing and overlap analysis), boosting retrieval precision by <strong>~35%</strong>.</li>
+              <li>Validated and audited document data quality within <strong>Amazon OpenSearch</strong> vector databases, ensuring data consistency and robust indexing across document versions.</li>
+              <li>Collaborated closely with engineering and client stakeholders to present weekly analytics reports on <strong>AWS EC2 backend performance metrics</strong> and system utilization trends.</li>
+            </ul>
+
+            <div class="tech-used">
+              <span>Data Analytics</span>
+              <span>SQL</span>
+              <span>Python</span>
+              <span>Live Data Analysis</span>
+              <span>KPI Dashboards</span>
+              <span>AWS OpenSearch</span>
+              <span>Amazon EC2</span>
+              <span>Performance Metrics</span>
+              <span>Reporting</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects Section (DATA ANALYSIS FIRST!) -->
   <section class="section section-dark" id="projects">
     <div class="container">
       <div class="section-header reveal-up">
-        <span class="section-tag">My Work</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <p class="section-sub">Practical knowledge and hands-on experience</p>
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Analytics &amp; <span class="gradient-text">BI Projects</span></h2>
+        <p class="section-sub">End-to-end data analytics, interactive BI dashboards, ETL pipelines, and business intelligence solutions</p>
+      </div>
+
+      <!-- Project Filter Buttons -->
+      <div class="project-filters reveal-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="powerbi">Power BI &amp; Tableau</button>
+        <button class="filter-btn" data-filter="sql">Data Analytics &amp; SQL</button>
+        <button class="filter-btn" data-filter="etl">ETL &amp; Warehousing</button>
       </div>
 
       <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <div class="project-card reveal-up" data-delay="0">
-          <div class="project-glow"></div>
+        <!-- Project 1: HR Workforce Analytics & Attrition Dashboard (Power BI) -->
+        <div class="project-card reveal-up" data-category="powerbi">
+          <span class="project-badge-top">Power BI</span>
           <div class="project-header">
             <div class="project-icon">
-              <i class="fas fa-ticket-alt"></i>
+              <i class="fas fa-users-gear"></i>
             </div>
             <div class="project-links">
-              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/sai-krishna-akkala/PowerBI-Dashboard" target="_blank" rel="noopener noreferrer" class="proj-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
             </div>
           </div>
-          <div class="project-num">01</div>
-          <h3 class="project-title">AI-Powered Jira Resolution Agent</h3>
+          <h3 class="project-title">HR Workforce Analytics &amp; Employee Attrition Dashboard</h3>
           <p class="project-desc">
-            End-to-end agentic AI system that autonomously reads Jira tickets, identifies root causes of
-            code-level bugs, generates targeted fixes, and commits changes to Git branches.
+            Interactive Power BI dashboard developed to analyze employee attrition patterns, workforce demographics,
+            and department-level trends to empower data-driven HR leadership decisions.
           </p>
           <ul class="project-highlights">
-            <li>Multi-step LLM reasoning pipeline for root cause analysis</li>
-            <li>Orchestrated AI agents using CrewAI with automated Git workflows</li>
-            <li>Integrated Jira, codebase analysis, and version control into one workflow</li>
+            <li>Engineered end-to-end data preparation in Power Query, star schema data modeling, and custom DAX measures for turnover and retention KPIs.</li>
+            <li>Designed interactive analytical visualizations including dynamic KPI scorecards, departmental attrition breakdowns, and regional workforce distribution.</li>
+            <li>Implemented Row-Level Security (RLS) to enforce role-based data access across regional heads and department leadership.</li>
           </ul>
           <div class="project-tech">
-            <span>CrewAI</span><span>Ollama</span><span>Python</span><span>Git</span>
+            <span>Power BI</span>
+            <span>Power Query</span>
+            <span>DAX</span>
+            <span>Data Modeling</span>
+            <span>Row-Level Security (RLS)</span>
+            <span>HR Analytics</span>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card reveal-up" data-delay="100">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-code-branch"></i>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sai-krishna-akkala/PR-Review-Autopilot" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://github.com/sai-krishna-akkala/PR-Review-Autopilot" class="proj-link" title="Repository"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="project-num">02</div>
-          <h3 class="project-title">PR Review Autopilot</h3>
-          <p class="project-desc">
-            Multi-agent pull request review system that triggers when a PR is raised, runs specialized
-            security, performance, and code quality agents, and posts the review feedback directly on GitHub.
-          </p>
-          <ul class="project-highlights">
-            <li>Automated PR event handling for instant AI-assisted review workflows</li>
-            <li>Dedicated agents for security checks, performance risks, and code quality analysis</li>
-            <li>Posts structured review comments directly into GitHub for developer action</li>
-          </ul>
-          <div class="project-tech">
-            <span>GitHub</span><span>Agents</span><span>Python</span><span>Code Review</span><span>Automation</span>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card reveal-up" data-delay="200">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-bell"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="project-num">03</div>
-          <h3 class="project-title">AI Alert System</h3>
-          <p class="project-desc">
-            Real-time intelligent monitoring application that detects abnormal or critical conditions
-            from live inputs and triggers immediate Gmail and Telegram alerts with minimal manual supervision.
-          </p>
-          <ul class="project-highlights">
-            <li>Real-time monitoring pipeline for continuous video and input stream analysis</li>
-            <li>AI-based anomaly detection using OpenCV, NumPy, scikit-learn, and custom decision logic</li>
-            <li>Instant alert delivery through Gmail and Telegram with a modular, scalable Streamlit deployment</li>
-          </ul>
-          <div class="project-tech">
-            <span>Python</span><span>OpenCV</span><span>NumPy</span><span>scikit-learn</span><span>Streamlit</span><span>Telegram API</span>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card reveal-up" data-delay="300">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-warehouse"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="project-num">04</div>
-          <h3 class="project-title">Enterprise Data Warehouse &amp; Analytics Platform</h3>
-          <p class="project-desc">
-            End-to-end ETL pipeline ingesting CRM and ERP datasets with Star Schema modeling,
-            statistical analysis, and self-service BI dashboards — delivering 3× faster reporting.
-          </p>
-          <ul class="project-highlights">
-            <li>ETL pipeline with transformation logic and data quality checks</li>
-            <li>Star Schema with optimized fact and dimension tables</li>
-            <li>Integrated with Power BI and Tableau for self-service analytics</li>
-          </ul>
-          <div class="project-tech">
-            <span>Python</span><span>SQL</span><span>ETL</span><span>Star Schema</span><span>Power BI</span>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card reveal-up" data-delay="400">
-          <div class="project-glow"></div>
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-search-plus"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" class="proj-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="project-num">05</div>
-          <h3 class="project-title">Automated EDA &amp; Intelligent Data Analysis Platform</h3>
-          <p class="project-desc">
-            Streamlit web application for CSV and SQL Server data ingestion with automated EDA,
-            statistical profiling, and ML-based outlier detection — reducing analyst prep time by ~50%.
-          </p>
-          <ul class="project-highlights">
-            <li>Supports datasets up to 500K rows with interactive filtering</li>
-            <li>Automated data cleaning and dynamic Matplotlib/Seaborn visualizations</li>
-            <li>Enabled non-technical users to perform EDA independently</li>
-          </ul>
-          <div class="project-tech">
-            <span>Python</span><span>Streamlit</span><span>Pandas</span><span>SQL Server</span><span>ML</span>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="project-card reveal-up" data-delay="500">
-          <div class="project-glow"></div>
+        <!-- Project 2: Dynamic Sales, Profit & Orders Analysis Dashboard (Tableau) -->
+        <div class="project-card reveal-up" data-category="powerbi">
+          <span class="project-badge-top">Tableau</span>
           <div class="project-header">
             <div class="project-icon">
               <i class="fas fa-chart-line"></i>
             </div>
             <div class="project-links">
-              <a href="https://github.com/sai-krishna-akkala/Ecommerce-data-analysis" class="proj-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://github.com/sai-krishna-akkala/Ecommerce-data-analysis" class="proj-link" title="Repository"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#projects" class="proj-link" title="Tableau Analytics"><i class="fas fa-chart-simple"></i></a>
             </div>
           </div>
-          <div class="project-num">06</div>
-          <h3 class="project-title">E-Commerce Analytics</h3>
+          <h3 class="project-title">Dynamic Sales, Profit &amp; Orders Analysis Dashboard</h3>
           <p class="project-desc">
-            End-to-end analytics solution built on the Olist e-commerce dataset using Python, MySQL, and Power BI,
-            with ETL pipelines, KPI dashboards, delivery insights, and city-based row level security.
+            Interactive Tableau analytics dashboard featuring dynamic KPI cards, regional performance, and profitability analysis
+            using parameters, calculated fields, and advanced table calculations.
           </p>
           <ul class="project-highlights">
-            <li>Built a complete ETL workflow in Python to clean, load, and prepare e-commerce data in MySQL</li>
-            <li>Created analytical SQL views and interactive Power BI dashboards for sales, revenue, and delivery insights</li>
-            <li>Implemented city-based RLS so users can securely access dashboards limited to their own location</li>
+            <li>Developed dynamic KPIs, parameter-driven forecasting, and calculated fields to identify top-performing products and sales trends.</li>
+            <li>Leveraged Level of Detail (LOD) expressions, table calculations, and dashboard actions for granular self-service exploration.</li>
+            <li>Enabled self-service exploration of sales, profit margins, and order fulfillment metrics through intuitive data storytelling.</li>
           </ul>
           <div class="project-tech">
-            <span>Python</span><span>MySQL</span><span>Power BI</span><span>SQL</span><span>ETL</span><span>RLS</span>
+            <span>Tableau</span>
+            <span>SQL</span>
+            <span>LOD Expressions</span>
+            <span>Data Visualization</span>
+            <span>Calculated Fields</span>
+            <span>Sales Analytics</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Enterprise Data Warehouse & BI Platform -->
+        <div class="project-card reveal-up" data-category="etl">
+          <span class="project-badge-top">ETL &amp; Data Warehouse</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-warehouse"></i>
+            </div>
+            <div class="project-links">
+              <a href="#projects" class="proj-link" title="Data Warehouse Project"><i class="fas fa-database"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Enterprise Data Warehouse &amp; Analytics Platform</h3>
+          <p class="project-desc">
+            End-to-end data warehousing solution ingesting CRM and ERP datasets with Star Schema modeling,
+            data validation checks, and self-service BI dashboards delivering 3× faster reporting queries.
+          </p>
+          <ul class="project-highlights">
+            <li>Designed Python/SQL ETL pipeline ingesting disparate CRM and ERP datasets with automated transformation logic and data quality validation.</li>
+            <li>Modeled Star Schema with optimized fact and dimension tables for sales trends, customer segmentation, and operations reporting.</li>
+            <li>Integrated with Power BI and Tableau for self-service analytics dashboards, drastically reducing time-to-insight for business stakeholders.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>ETL Pipelines</span>
+            <span>Star Schema</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
+          </div>
+        </div>
+
+        <!-- Project 4: E-Commerce Analytics Platform -->
+        <div class="project-card reveal-up" data-category="powerbi sql">
+          <span class="project-badge-top">E-Commerce BI</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-cart-shopping"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sai-krishna-akkala/Ecommerce-data-analysis" target="_blank" rel="noopener noreferrer" class="proj-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Analytics Platform</h3>
+          <p class="project-desc">
+            Comprehensive analytics solution built on 100K+ e-commerce transactions using Python, MySQL, and Power BI,
+            featuring automated ETL workflows, KPI tracking, and regional Row-Level Security.
+          </p>
+          <ul class="project-highlights">
+            <li>Built automated Python ETL workflows to clean, transform, and load e-commerce transaction data into MySQL database schemas.</li>
+            <li>Created analytical SQL views and interactive Power BI dashboards tracking sales velocity, revenue trends, and delivery performance.</li>
+            <li>Implemented city-based Row-Level Security (RLS) ensuring regional store managers securely access localized performance metrics.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>Power BI</span>
+            <span>SQL Views</span>
+            <span>ETL</span>
+            <span>Row-Level Security</span>
+          </div>
+        </div>
+
+        <!-- Project 5: Automated EDA & Intelligent Data Analysis Platform -->
+        <div class="project-card reveal-up" data-category="sql">
+          <span class="project-badge-top">EDA &amp; Python</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-magnifying-glass-chart"></i>
+            </div>
+            <div class="project-links">
+              <a href="#projects" class="proj-link" title="EDA Platform"><i class="fas fa-chart-area"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Automated EDA &amp; Intelligent Data Analysis Platform</h3>
+          <p class="project-desc">
+            Interactive web application for automated Exploratory Data Analysis (EDA), statistical profiling,
+            and outlier detection on datasets up to 500K rows—reducing analyst prep time by ~50%.
+          </p>
+          <ul class="project-highlights">
+            <li>Built a Streamlit web application for CSV and SQL Server data ingestion, automated data cleaning, and statistical profiling.</li>
+            <li>Implemented automated missing-value handling, outlier detection, and dynamic Matplotlib/Seaborn charts with interactive filtering.</li>
+            <li>Enabled non-technical business stakeholders to independently perform exploratory analysis without writing code.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>Pandas</span>
+            <span>SQL Server</span>
+            <span>Statistical Profiling</span>
+            <span>EDA</span>
+          </div>
+        </div>
+
+        <!-- Project 6: PR Review Autopilot & Automation System -->
+        <div class="project-card reveal-up" data-category="sql">
+          <span class="project-badge-top">Automation</span>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-code-pull-request"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sai-krishna-akkala/PR-Review-Autopilot" target="_blank" rel="noopener noreferrer" class="proj-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">PR Review Autopilot &amp; Quality Automation</h3>
+          <p class="project-desc">
+            Automated code quality and analysis pipeline that triggers on pull request events to analyze code diffs,
+            evaluate security patterns, and track performance metrics directly in GitHub.
+          </p>
+          <ul class="project-highlights">
+            <li>Automated webhook and event triggers for rapid code review workflows and vulnerability detection.</li>
+            <li>Engineered structured feedback generation and automated metric tracking directly integrated into GitHub.</li>
+            <li>Demonstrates advanced Python automation, API integrations, and code quality governance.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>GitHub API</span>
+            <span>Automation</span>
+            <span>Code Quality</span>
+            <span>Git</span>
           </div>
         </div>
 
@@ -585,14 +820,17 @@
     </div>
   </section>
 
-  <!-- Certifications Section -->
+  <!-- Certifications & Education Section -->
   <section class="section" id="certifications">
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">Credentials</span>
         <h2 class="section-title">Certifications &amp; <span class="gradient-text">Education</span></h2>
+        <p class="section-sub">Verified academic background and industry certifications in data analytics and visualization</p>
       </div>
+
       <div class="certs-edu-grid">
+        <!-- Education Column -->
         <div class="edu-block reveal-left">
           <h3 class="block-title"><i class="fas fa-graduation-cap"></i> Education</h3>
           <div class="edu-card">
@@ -600,7 +838,7 @@
             <div class="edu-info">
               <h4>B.Tech — Data Science</h4>
               <span class="edu-school">Santhiram Engineering College (JNTUA)</span>
-              <span class="edu-year">Aug 2021 – Apr 2025</span>
+              <span class="edu-year">Nov 2021 – Apr 2025</span>
               <div class="cgpa-bar-wrap">
                 <span>CGPA:</span>
                 <div class="cgpa-bar">
@@ -610,42 +848,58 @@
               </div>
             </div>
           </div>
+
+          <!-- Academic Achievement -->
+          <div class="award-card">
+            <div class="award-icon"><i class="fas fa-medal"></i></div>
+            <div>
+              <h5>Silver Medal for Academic Excellence</h5>
+              <p>Honored with the silver medal for outstanding academic performance in Data Science.</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Certifications Column -->
         <div class="certs-block reveal-right">
-          <h3 class="block-title"><i class="fas fa-certificate"></i> Certifications</h3>
+          <h3 class="block-title"><i class="fas fa-certificate"></i> Professional Certifications</h3>
           <div class="cert-list">
+
             <div class="cert-card">
-              <div class="cert-badge"><i class="fas fa-chart-bar"></i></div>
-              <div>
+              <div class="cert-badge"><i class="fas fa-chart-column"></i></div>
+              <div class="cert-info">
                 <h4>Data Analyst Certification</h4>
                 <span>ExcelR, Bangalore</span>
               </div>
               <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
             </div>
+
             <div class="cert-card">
-              <div class="cert-badge"><i class="fas fa-users-cog"></i></div>
-              <div>
-                <h4>Creating Agents with CrewAI</h4>
+              <div class="cert-badge"><i class="fab fa-python"></i></div>
+              <div class="cert-info">
+                <h4>Data Analysis with Python</h4>
+                <span>IBM</span>
+              </div>
+              <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge"><i class="fas fa-terminal"></i></div>
+              <div class="cert-info">
+                <h4>Claude Code for Data Analyst</h4>
                 <span>LinkedIn Learning</span>
               </div>
               <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
             </div>
+
             <div class="cert-card">
-              <div class="cert-badge"><i class="fas fa-language"></i></div>
-              <div>
-                <h4>Natural Language Processing (NLP)</h4>
-                <span>LinkedIn Learning</span>
-              </div>
-              <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge"><i class="fas fa-magic"></i></div>
-              <div>
+              <div class="cert-badge"><i class="fas fa-brain"></i></div>
+              <div class="cert-info">
                 <h4>Advanced Prompt Engineering Techniques</h4>
                 <span>LinkedIn Learning</span>
               </div>
               <div class="cert-tick"><i class="fas fa-check-circle"></i></div>
             </div>
+
           </div>
         </div>
       </div>
@@ -658,8 +912,9 @@
       <div class="section-header reveal-up">
         <span class="section-tag">Get In Touch</span>
         <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
-        <p class="section-sub">Open to full-time roles, freelance projects, and collaborations.</p>
+        <p class="section-sub">Open to full-time Data Analyst roles, Business Intelligence opportunities, and analytical collaborations.</p>
       </div>
+
       <div class="contact-grid">
         <div class="contact-info reveal-left">
           <div class="contact-card">
@@ -669,6 +924,7 @@
               <a href="mailto:saikrishnaakkala9@gmail.com" class="contact-val">saikrishnaakkala9@gmail.com</a>
             </div>
           </div>
+
           <div class="contact-card">
             <div class="contact-icon"><i class="fas fa-phone"></i></div>
             <div>
@@ -676,6 +932,7 @@
               <a href="tel:+919676295867" class="contact-val">+91 9676295867</a>
             </div>
           </div>
+
           <div class="contact-card">
             <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
@@ -683,38 +940,40 @@
               <span class="contact-val">Bangalore, India</span>
             </div>
           </div>
+
           <div class="social-links">
             <a href="mailto:saikrishnaakkala9@gmail.com" class="social-btn" title="Email">
               <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+            <a href="https://linkedin.com/in/venkata-sai-krishna-akkala" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+            <a href="https://github.com/sai-krishna-akkala" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
               <i class="fab fa-github"></i>
             </a>
           </div>
         </div>
+
         <form class="contact-form reveal-right" id="contactForm" action="https://formsubmit.co/saikrishnaakkala9@gmail.com" method="POST">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <input type="hidden" name="_template" value="table" />
           <div class="form-row">
             <div class="form-group">
-              <label>Your Name</label>
-              <input type="text" name="name" placeholder="John Doe" required />
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="John Doe" required />
             </div>
             <div class="form-group">
-              <label>Your Email</label>
-              <input type="email" name="email" placeholder="john@example.com" required />
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required />
             </div>
           </div>
           <div class="form-group">
-            <label>Subject</label>
-            <input type="text" name="subject" placeholder="Job Opportunity / Collaboration" required />
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="Data Analyst Opportunity / Inquiry" required />
           </div>
           <div class="form-group">
-            <label>Message</label>
-            <textarea rows="5" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" name="message" placeholder="Hi Sai Krishna, I'd like to discuss a Data Analyst role..." required></textarea>
           </div>
           <button type="submit" class="btn-primary full-width">
             <span>Send Message</span>
@@ -733,17 +992,17 @@
         <span class="brand-dot"></span>
         <span>Akkala Venkata Sai Krishna</span>
       </div>
-      <p class="footer-copy">© 2025 · Built with passion for AI &amp; Data Science</p>
+      <p class="footer-copy">© 2026 · Data Analyst &amp; Business Intelligence Specialist · Bangalore, India</p>
       <div class="footer-socials">
-        <a href="mailto:saikrishnaakkala9@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="mailto:saikrishnaakkala9@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/venkata-sai-krishna-akkala" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/sai-krishna-akkala" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </footer>
 
   <!-- Floating Resume Download Button -->
-  <a href="SaiKrishna_Resume.pdf" download class="fab-resume">
+  <a href="SaiKrishna_Resume.pdf" download class="fab-resume" aria-label="Download Resume">
     <i class="fas fa-file-arrow-down"></i>
     <span>Download CV</span>
   </a>
